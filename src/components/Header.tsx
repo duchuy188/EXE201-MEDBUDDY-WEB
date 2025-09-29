@@ -1,7 +1,7 @@
-
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import MedBuddyLogo from "../assets/images/medbuddy-logo.png";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,7 +13,8 @@ export const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <div className="w-10 h-10 bg-gradient-to-br from-mint-pastel to-green-pastel rounded-xl flex items-center justify-center">
-              <span className="text-white font-bold text-lg">💊</span>
+              {/* Thay thế emoji bằng hình ảnh */}
+              <img src={MedBuddyLogo} alt="MedBuddy" className="w-7 h-7" />
             </div>
             <span className="text-2xl font-bold font-mulish bg-gradient-to-r from-mint-pastel to-green-pastel bg-clip-text text-transparent">
               HAP MEDBUDDY

@@ -1,3 +1,4 @@
+import { FaFacebook, FaYoutube, FaComments } from "react-icons/fa";
 
 export const Footer = () => {
   return (
@@ -19,7 +20,7 @@ export const Footer = () => {
               người bệnh mãn tính và người thân chăm sóc từ xa.
             </p>
             <div className="space-y-2">
-              <p className="text-gray-700 font-semibold">📧 Email: support@hapmedbuddy.com</p>
+              <p className="text-gray-700 font-semibold">📧 Email: hapmedbuddy@gmail.com</p>
               <p className="text-gray-700 font-semibold">📞 Hotline: 1900-1234 (miễn phí)</p>
               <p className="text-gray-700 font-semibold">🕐 Hỗ trợ: 24/7</p>
             </div>
@@ -56,14 +57,27 @@ export const Footer = () => {
             <div>
               <h3 className="text-lg font-bold font-mulish mb-2 text-gray-800">Kết nối với chúng tôi</h3>
               <div className="flex space-x-4">
-                <a href="#" className="w-12 h-12 bg-gradient-to-br from-mint-pastel to-green-pastel rounded-full flex items-center justify-center text-white text-xl hover:scale-110 transition-transform duration-300">
-                  📘
+                <a 
+                  href="https://www.facebook.com/HAPMedBuddy2025" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="w-12 h-12 bg-[#58a7de] rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform duration-300"
+                >
+                  <FaFacebook size={24} />
                 </a>
-                <a href="#" className="w-12 h-12 bg-gradient-to-br from-pink-pastel to-mint-pastel rounded-full flex items-center justify-center text-white text-xl hover:scale-110 transition-transform duration-300">
-                  📹
+                
+                <a 
+                  href="#" 
+                  className="w-12 h-12 bg-[#58a7de] rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform duration-300"
+                >
+                  <FaYoutube size={24} />
                 </a>
-                <a href="#" className="w-12 h-12 bg-gradient-to-br from-green-pastel to-pink-pastel rounded-full flex items-center justify-center text-white text-xl hover:scale-110 transition-transform duration-300">
-                  💬
+                
+                <a 
+                  href="#" 
+                  className="w-12 h-12 bg-[#58a7de] rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform duration-300"
+                >
+                  <FaComments size={24} />
                 </a>
               </div>
             </div>
@@ -73,7 +87,7 @@ export const Footer = () => {
                 <strong>Nhóm phát triển HAP MEDBUDDY</strong>
               </p>
               <p className="text-gray-500">
-                © 2024 HAP MEDBUDDY. Mọi quyền được bảo lưu.
+                © 2025 HAP MEDBUDDY. Mọi quyền được bảo lưu.
               </p>
               <p className="text-sm text-gray-500 mt-1">
                 Được phát triển với ❤️ tại Việt Nam

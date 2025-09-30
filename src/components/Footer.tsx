@@ -1,4 +1,5 @@
-import { FaFacebook, FaYoutube, FaComments } from "react-icons/fa";
+import { FaFacebook, FaTiktok, FaComments } from "react-icons/fa";
+import MedBuddyLogo from "../assets/images/medbuddy-logo.png"; // Add this import at the top
 
 export const Footer = () => {
   return (
@@ -8,8 +9,12 @@ export const Footer = () => {
           {/* Logo and description */}
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-mint-pastel to-green-pastel rounded-xl flex items-center justify-center">
-                <span className="text-white font-bold text-lg">💊</span>
+              <div className="w-10 h-10 bg-gradient-to-br from-mint-pastel to-green-pastel rounded-xl flex items-center justify-center p-2">
+                <img 
+                  src={MedBuddyLogo} 
+                  alt="MedBuddy" 
+                  className="w-full h-full object-contain"
+                />
               </div>
               <span className="text-2xl font-bold font-mulish bg-gradient-to-r from-mint-pastel to-green-pastel bg-clip-text text-transparent">
                 HAP MEDBUDDY
@@ -58,7 +63,7 @@ export const Footer = () => {
               <h3 className="text-lg font-bold font-mulish mb-2 text-gray-800">Kết nối với chúng tôi</h3>
               <div className="flex space-x-4">
                 <a 
-                  href="https://www.facebook.com/HAPMedBuddy2025" 
+                  href="https://facebook.com/HAPMedBuddy2025" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="w-12 h-12 bg-[#58a7de] rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform duration-300"
@@ -67,16 +72,15 @@ export const Footer = () => {
                 </a>
                 
                 <a 
-                  href="#" 
+                  href="https://www.tiktok.com/@hapmedbuddy?lang=vi-VN" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
                   className="w-12 h-12 bg-[#58a7de] rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform duration-300"
                 >
-                  <FaYoutube size={24} />
+                  <FaTiktok size={24} />
                 </a>
                 
-                <a 
-                  href="#" 
-                  className="w-12 h-12 bg-[#58a7de] rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform duration-300"
-                >
+                <a href="#" className="w-12 h-12 bg-[#58a7de] rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform duration-300">
                   <FaComments size={24} />
                 </a>
               </div>

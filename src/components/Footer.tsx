@@ -63,7 +63,7 @@ export const Footer = () => {
               <h3 className="text-lg font-bold font-mulish mb-2 text-gray-800">Kết nối với chúng tôi</h3>
               <div className="flex space-x-4">
                 <a 
-                  href="https://facebook.com/HAPMedBuddy2025" 
+                  href="https://www.facebook.com/HAPMedBuddy" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="w-12 h-12 bg-[#58a7de] rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform duration-300"

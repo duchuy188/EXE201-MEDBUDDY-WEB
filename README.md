@@ -1,73 +1,117 @@
-# Welcome to your Lovable project
+# HAP MEDBUDDY - Ứng dụng hỗ trợ người bệnh cao huyết áp
 
-## Project info
+## Giới thiệu dự án
 
-**URL**: https://lovable.dev/projects/72917595-e71c-49a4-a5ab-e7854e2d7595
+HAP MEDBUDDY là một ứng dụng web được thiết kế để hỗ trợ người bệnh cao huyết áp, đặc biệt là người cao tuổi, trong việc:
+- Nhắc nhở uống thuốc đúng giờ
+- Theo dõi huyết áp hàng ngày
+- Kết nối với người thân để chia sẻ thông tin sức khỏe
+- Cung cấp thông tin y tế và lời khuyên từ AI
 
-## How can I edit this code?
+## Công nghệ sử dụng
 
-There are several ways of editing your application.
+Dự án được xây dựng với:
+- **Vite** - Build tool và development server
+- **TypeScript** - Ngôn ngữ lập trình
+- **React** - Framework frontend
+- **shadcn-ui** - Component library
+- **Tailwind CSS** - CSS framework
+- **Capacitor** - Hybrid app development
 
-**Use Lovable**
+## Cài đặt và chạy dự án
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ab34c548-d192-44aa-8d7c-8fddbdbe2db8) and start prompting.
+### Yêu cầu hệ thống
+- Node.js (phiên bản 16 trở lên)
+- npm hoặc yarn
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+### Các bước cài đặt
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
+# Bước 1: Clone repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Bước 2: Di chuyển vào thư mục dự án
+cd EXE201-MEDBUDDY-WEB
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Bước 3: Cài đặt dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Bước 4: Chạy development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### Các lệnh khác
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```sh
+# Build dự án cho production
+npm run build
 
-**Use GitHub Codespaces**
+# Preview build production
+npm run preview
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+# Lint code
+npm run lint
+```
 
-## What technologies are used for this project?
+## Cấu trúc dự án
 
-This project is built with:
+```
+src/
+├── components/          # Các component React
+│   ├── mobile/         # Components cho mobile app
+│   └── ui/             # UI components từ shadcn-ui
+├── pages/              # Các trang chính
+├── shared/             # Code dùng chung
+│   ├── api/           # API endpoints
+│   ├── types/         # TypeScript types
+│   └── utils/         # Utility functions
+├── hooks/              # Custom React hooks
+└── assets/             # Hình ảnh và tài nguyên
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Tính năng chính
 
-## How can I deploy this project?
+### Web Application
+- Landing page giới thiệu ứng dụng
+- Demo các tính năng chính
+- Hướng dẫn sử dụng
+- Download links cho mobile app
 
-Simply open [Lovable](https://lovable.dev/projects/ab34c548-d192-44aa-8d7c-8fddbdbe2db8) and click on Share -> Publish.
+### Mobile App (Capacitor)
+- Dashboard theo dõi sức khỏe
+- Quản lý thuốc và lịch uống
+- Theo dõi huyết áp
+- Kết nối với gia đình
+- AI Health Insights
+- Voice reminders
 
-## Can I connect a custom domain to my Lovable project?
+## Deployment
 
-Yes, you can!
+### Web Application
+Dự án có thể được deploy lên các platform như:
+- Vercel
+- Netlify
+- GitHub Pages
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Mobile App
+Sử dụng Capacitor để build cho:
+- Android (APK/AAB)
+- iOS (IPA)
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## Đóng góp
+
+1. Fork dự án
+2. Tạo feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to branch (`git push origin feature/AmazingFeature`)
+5. Mở Pull Request
+
+## Liên hệ
+
+- **Team**: HAP MEDBUDDY Team
+- **Email**: contact@hapmedbuddy.com
+- **Website**: https://hapmedbuddy.com
+
+## License
+
+Dự án này được phát triển cho mục đích học tập và nghiên cứu.

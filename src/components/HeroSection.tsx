@@ -10,7 +10,7 @@ export const HeroSection = () => {
   };
 
   return (
-    <section className="py-16 md:py-24 relative overflow-hidden">
+    <section id="gioi-thieu" className="py-16 md:py-24 relative overflow-hidden">
       {/* Background decorations */}
       <div className="absolute top-20 left-10 w-20 h-20 bg-senior-mint/30 rounded-full blur-xl"></div>
       <div className="absolute bottom-20 right-10 w-32 h-32 bg-senior-sky/30 rounded-full blur-xl"></div>
@@ -50,7 +50,7 @@ export const HeroSection = () => {
               </Button>
               
               <Button 
-                onClick={() => scrollToSection('demo')}
+                onClick={() => scrollToSection('huong-dan')}
                 variant="outline" 
                 className="border-2 border-senior-accent text-senior-accent hover:bg-senior-accent hover:text-white font-semibold px-6 py-3 md:px-8 md:py-4 rounded-full text-lg md:text-xl transition-all duration-300"
               >

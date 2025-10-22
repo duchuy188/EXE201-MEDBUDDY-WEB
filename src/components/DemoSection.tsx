@@ -31,7 +31,7 @@ export const DemoSection = () => {
   ];
 
   return (
-    <section id="demo" className="py-20 bg-gradient-to-br from-cream to-white">
+    <section id="huong-dan" className="py-20 bg-gradient-to-br from-cream to-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold font-mulish mb-6">

@@ -1,7 +1,18 @@
 
 import { Button } from "@/components/ui/button";
+import { useToast } from "@/hooks/use-toast";
 
 export const DownloadSection = () => {
+  const { toast } = useToast();
+
+  const handleiPhoneClick = () => {
+    toast({
+      title: "🍎 Sắp ra mắt!",
+      description: "Phiên bản iOS đang trong quá trình phát triển. Vui lòng quay lại sau nhé!",
+      duration: 3000,
+    });
+  };
+
   return (
     <section id="tai-app" className="py-20 bg-gradient-to-br from-mint-pastel/20 via-pink-pastel/10 to-green-pastel/20">
       <div className="container mx-auto px-4">
@@ -26,14 +37,24 @@ export const DownloadSection = () => {
             
             {/* Download buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Button className="bg-gradient-to-r from-mint-pastel to-green-pastel hover:from-mint-pastel/80 hover:to-green-pastel/80 text-gray-800 font-bold px-8 py-4 rounded-full text-xl shadow-lg hover:shadow-xl transition-all duration-300 animate-heartbeat">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" className="h-8 mr-2" />
-                Tải cho Android
-              </Button>
+              <a 
+                href="https://expo.dev/accounts/nhatxatuno/projects/MEDBUDDY/builds/6020d2f9-b379-490b-b23d-e7f54296a3c8" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block"
+              >
+                <Button className="bg-gradient-to-r from-mint-pastel to-green-pastel hover:from-mint-pastel/80 hover:to-green-pastel/80 text-gray-800 font-bold px-8 py-4 rounded-full text-xl shadow-lg hover:shadow-xl transition-all duration-300 animate-heartbeat w-full">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" className="h-8 mr-2" />
+                  Tải cho Android
+                </Button>
+              </a>
               
-              <Button className="bg-gradient-to-r from-pink-pastel to-mint-pastel hover:from-pink-pastel/80 hover:to-mint-pastel/80 text-gray-800 font-bold px-8 py-4 rounded-full text-xl shadow-lg hover:shadow-xl transition-all duration-300 animate-heartbeat">
+              <Button 
+                onClick={handleiPhoneClick}
+                className="bg-gradient-to-r from-pink-pastel to-mint-pastel hover:from-pink-pastel/80 hover:to-mint-pastel/80 text-gray-800 font-bold px-8 py-4 rounded-full text-xl shadow-lg hover:shadow-xl transition-all duration-300 animate-heartbeat"
+              >
                 <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="App Store" className="h-8 mr-2" />
-                Tải cho iPhone
+                Tải cho iPhone (Sắp ra mắt)
               </Button>
             </div>
             
